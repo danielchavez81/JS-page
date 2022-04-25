@@ -1,7 +1,18 @@
 function newElement(type, elementClass, elementId , elementParent){
-    var element  = document.createElement(type);
-    element.className = elementClass;
-    element.id = elementId;
+
+    if (type) {
+        var element  = document.createElement(type);
+    } else {
+        var element = document.createElement('div');
+    }
+
+    if (elementClass) {
+        element.className = elementClass;
+    }
+    if (elementId) {
+        element.id = elementId;
+    }
+
     if (elementParent){
         elementParent.appendChild(element);
     } else {
@@ -11,5 +22,5 @@ function newElement(type, elementClass, elementId , elementParent){
 }
 
 var root = newElement("div", "root", "div_root");
-var test = newElement("div", "test", "testt", root);
+
 

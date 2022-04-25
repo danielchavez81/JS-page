@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+}
+
+#div_root {
+    width: 100%;
+    height: 700px;
+    margin: 15px;
+    padding: 0;
+    background-color: bisque;
+}
