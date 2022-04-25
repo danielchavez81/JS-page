@@ -31,10 +31,13 @@ function newElement(type, elementClass, elementId , elementParent, elementConten
 
 }
 
+let description_text = "Esta es una pagina creada enteramente por JS y estilizada con CSS, nada de HTML."
+
 var root = newElement("div", "root", "div_root");
 var container = newElement("div", "container", 0, root);
 var content = newElement("div", "content", 0, container);
 var top_bar = newElement("navbar", "navbar", 0, content, "JS Page");
-
-
+var text_description = newElement("div", "description", 0, content, description_text)
+var link = newElement("a", "link", 0, top_bar, "Github")
+link.href = "https://github.com/danielchavez81"
 
