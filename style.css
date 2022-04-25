@@ -10,22 +10,22 @@ html, body{
 .container{
     height: 100%;
     padding: 0 150px 0 150px;
-    background-color: #044040;
+    background-color: #080808;
 }
 
 .content{
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    background-color: rgb(157, 210, 240);
+    background-color: #F2F2F2;
 }
 
 .navbar{
-    padding: 10px;
+    grid-column: 2 / 5;
     margin: 10px;
-    background-color: rgb(83, 137, 244);
-    grid-column: 1 / 4;
+    border: 3px solid #080808;
+    border-radius: 25px;
     font-size: 64px;
     text-align: center;
     justify-content: center;
