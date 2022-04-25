@@ -64,3 +64,8 @@ html, body{
     align-self: end;
     font-family: "Roboto", sans-serif;
 }
+
+#canvas{
+    grid-row: 3 / 5;
+    grid-column: 4 / 5;
+}
