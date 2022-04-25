@@ -1,4 +1,4 @@
-function newElement(type, elementClass, elementId , elementParent){
+function newElement(type, elementClass, elementId , elementParent, elementContent){
     //Si se especifica un tipo se asigna ese tipo, caso contrario se toma como div por default
     if (type) {
         var element  = document.createElement(type);
@@ -22,12 +22,19 @@ function newElement(type, elementClass, elementId , elementParent){
     } else {
         document.body.appendChild(element)
     }
+
+
+    if (elementContent) {
+        element.innerText = elementContent
+    }
     return element;
+
 }
 
 var root = newElement("div", "root", "div_root");
 var container = newElement("div", "container", 0, root);
 var content = newElement("div", "content", 0, container);
-var top_bar = newElement("navbar", "navbar", 0, content);
+var top_bar = newElement("navbar", "navbar", 0, content, "JS Page");
+
 
 

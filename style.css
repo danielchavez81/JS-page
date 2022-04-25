@@ -10,7 +10,7 @@ html, body{
 .container{
     height: 100%;
     padding: 0 150px 0 150px;
-    background-color: rgba(248, 235, 97, 0.661);
+    background-color: #044040;
 }
 
 .content{
@@ -24,6 +24,10 @@ html, body{
 .navbar{
     padding: 10px;
     margin: 10px;
-    background-color: antiquewhite;
+    background-color: rgb(83, 137, 244);
     grid-column: 1 / 4;
+    font-size: 64px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
