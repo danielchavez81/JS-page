@@ -40,4 +40,5 @@ var top_bar = newElement("navbar", "navbar", 0, content, "JS Page");
 var text_description = newElement("div", "description", 0, content, description_text)
 var link = newElement("a", "link", 0, top_bar, "Github")
 link.href = "https://github.com/danielchavez81"
+var footer = newElement("div", "footer", 0, content, "Creado por Daniel F. Chavez");
 
